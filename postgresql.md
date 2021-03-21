@@ -14,4 +14,12 @@ UPDATE "Customers" SET "Country" = 'United Kingdom' WHERE "Country"='UK'
 
 ## WHERE CONDITIONS
 
+```sql
 SELECT * FROM "Customers" WHERE "Country"='United Kingdom'
+```
+
+## Left Join
+```sql
+select * from "Categories"
+left join "Products" on "Products"."CategoryID" = "Categories"."CategoryID"
+```
